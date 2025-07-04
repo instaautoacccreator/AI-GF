@@ -1,6 +1,15 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/gf.js", "use": "@vercel/node" }
+    {
+      "src": "gf.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/gf",
+      "dest": "/gf.js"
+    }
   ]
 }
